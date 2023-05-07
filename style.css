@@ -1,164 +1,170 @@
-body{
-    background-color: grey;
-    margin: 0;
-    padding: 0;
+body {
+	background-color: grey;
+	margin: 0;
+	padding: 0;
 }
 
-.wrapper{
-    width: 100%;
-    display:grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto 1fr;
-    grid-template-areas:
-    "header header"
+.wrapper {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto auto 1fr;
+	grid-template-areas: "header header"
     "main main"
-    "footer footer" ;
-    min-height: 100vh;
+    "footer footer";
+	min-height: 100vh;
 }
 
-header{
-    grid-area: header;
-}
-nav{
-    grid-area: nav;
-
-}
-nav > ul{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    background-color: black;
-    padding: 1%;
-    margin: 0;
-    height: 100%;
+header {
+	grid-area: header;
 }
 
-nav li{
-    list-style-type: none;
-    text-align: center;
-    font-size: 1.5em;
-}
-li a{
-    list-style-type:none;
-    text-decoration: none;
-    color: white;
-
-}
-nav a{
-    height: 100%;
-    width: 100%;
-    display: inline-block;
-    text-decoration: none;
+nav {
+	grid-area: nav;
 }
 
-h1{
-    text-align: center;
-    font-size: 5em;
-    color: white;
-
-}
-footer{
-    text-align: center;
-    font-size: 3em;
-    grid-area: footer;
-    display:grid;
-    grid-template-columns: 1fr;
-    padding: 1%;
-    margin: 0;
-    background-color: black;
-
+nav > ul {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	background-color: black;
+	padding: 1%;
+	margin: 0;
+	height: 100%;
 }
 
-footer p{
-    margin:0;
-    color: white;
-}
-main{
-    grid-area:main;
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
+nav li {
+	list-style-type: none;
+	text-align: center;
+	font-size: 1.5em;
 }
 
-
-section{
-    font-size: 1.5em;
-    text-align: center;
-    color:white;
+li a {
+	list-style-type: none;
+	text-decoration: none;
+	color: white;
 }
 
-.metal{
-    width: 60vh;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    margin-top: 2em;
-}
-.lemmy{
-    width: 60vh;
-    height: 30vw;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    margin-top: 2em;
-}
-.metallica{
-    width: 20vh;
-    height: 10vw;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    margin-top: 2em;
-
-}
-.inflames{
-    width: 20vh;
-    height: 10vw;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    margin-top: 2em;
-}
-.slipknot{
-    width: 20vh;
-    height: 10vw;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    margin-top: 2em;
-}
-table, th, td{
-    border: 1px solid;
-    margin-top: 2em;
-    border-collapse: collapse;
-    margin-left: auto;
-    margin-right: auto;
-    }
-
-tr:nth-child(even){
-    background-color: #222;
-}
-#instrument{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+nav a {
+	height: 100%;
+	width: 100%;
+	display: inline-block;
+	text-decoration: none;
 }
 
-#support{
-    display: grid;
-    grid-template-columns: 1fr;
+h1 {
+	text-align: center;
+	font-size: 5em;
+	color: white;
 }
 
-aside{
-    font-size: 1.5em;
-    color: white;
+footer {
+	text-align: center;
+	font-size: 3em;
+	grid-area: footer;
+	display: grid;
+	grid-template-columns: 1fr;
+	padding: 1%;
+	margin: 0;
+	background-color: black;
 }
 
-h2{
-    font-size: 2em;
-    color: white;
-    text-align:center;
+footer p {
+	margin: 0;
+	color: white;
 }
-@media (max-width:600px){
-    nav ul{
-        flex-direction: column;
-    }
+
+main {
+	grid-area: main;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto;
+}
+
+section {
+	font-size: 1.5em;
+	text-align: center;
+	color: white;
+}
+
+.metal {
+	width: 60vh;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	margin-top: 2em;
+}
+
+.lemmy {
+	width: 60vh;
+	height: 30vw;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	margin-top: 2em;
+}
+
+.metallica {
+	width: 20vh;
+	height: 10vw;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	margin-top: 2em;
+}
+
+.inflames {
+	width: 20vh;
+	height: 10vw;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	margin-top: 2em;
+}
+
+.slipknot {
+	width: 20vh;
+	height: 10vw;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	margin-top: 2em;
+}
+
+table, th, td {
+	border: 1px solid;
+	margin-top: 2em;
+	border-collapse: collapse;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+tr:nth-child(even) {
+	background-color: #222;
+}
+
+#instrument {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+#support {
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+aside {
+	font-size: 1.5em;
+	color: white;
+}
+
+h2 {
+	font-size: 2em;
+	color: white;
+	text-align: center;
+}
+
+@media (max-width:600px) {
+	nav ul {
+		flex-direction: column;
+	}
 }
