@@ -1,0 +1,153 @@
+body{
+    background-image:url(https://wallpaperaccess.com/full/2757455.jpg) ;
+    margin: 0;
+}
+
+.wrapper{
+    width: 100%;
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 250px auto 100px;
+    grid-template-areas:
+    "header header"
+    "main main"
+    "footer footer" ;
+}
+
+header{
+    grid-area: header;
+}
+nav{
+    grid-area: nav;
+
+}
+nav > ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    background-color: grey;
+    padding: 1%;
+    margin: 0;
+    height: 100%;
+}
+
+nav li{
+    list-style-type: none;
+    text-align: center;
+    font-size: 1.5em;
+}
+li a{
+    list-style-type:none;
+    text-decoration: none;
+
+}
+nav a{
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    text-decoration: none;
+}
+
+h1{
+    text-align: center;
+    font-size: 5em;
+
+}
+footer{
+    text-align: center;
+    font-size: 3em;
+    grid-area: footer;
+    display:grid;
+    grid-template-columns: 1fr;
+    padding: 1%;
+    margin: 0;
+    background-color: grey;
+
+}
+
+footer p{
+    margin:0;
+}
+main{
+    grid-area:main;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+
+section{
+    font-size: 1.5em;
+    text-align: center;
+    color:white;
+}
+
+.metal{
+    width: 60vh;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 2em;
+}
+.lemmy{
+    width: 60vh;
+    height: 30vw;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 2em;
+}
+.metallica{
+    width: 20vh;
+    height: 10vw;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 2em;
+
+}
+.inflames{
+    width: 20vh;
+    height: 10vw;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 2em;
+}
+.slipknot{
+    width: 20vh;
+    height: 10vw;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 2em;
+}
+table, th, td{
+    border: 1px solid;
+    margin-top: 2em;
+    border-collapse: collapse;
+    }
+#instrument{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#support{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+aside{
+    font-size: 1.5em;
+    color: white;
+}
+
+h2{
+    font-size: 2em;
+    color: white;
+    text-align:center;
+}
+@media (max-width:600px){
+    nav ul{
+        flex-direction: column;
+    }
+}
