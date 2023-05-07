@@ -1,17 +1,19 @@
 body{
-    background-image:url(https://wallpaperaccess.com/full/2757455.jpg) ;
+    background-color: grey;
     margin: 0;
+    padding: 0;
 }
 
 .wrapper{
     width: 100%;
     display:grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 250px auto 100px;
+    grid-template-rows: auto auto 1fr;
     grid-template-areas:
     "header header"
     "main main"
     "footer footer" ;
+    min-height: 100vh;
 }
 
 header{
@@ -24,7 +26,7 @@ nav{
 nav > ul{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    background-color: grey;
+    background-color: black;
     padding: 1%;
     margin: 0;
     height: 100%;
@@ -38,6 +40,7 @@ nav li{
 li a{
     list-style-type:none;
     text-decoration: none;
+    color: white;
 
 }
 nav a{
@@ -50,6 +53,7 @@ nav a{
 h1{
     text-align: center;
     font-size: 5em;
+    color: white;
 
 }
 footer{
@@ -60,12 +64,13 @@ footer{
     grid-template-columns: 1fr;
     padding: 1%;
     margin: 0;
-    background-color: grey;
+    background-color: black;
 
 }
 
 footer p{
     margin:0;
+    color: white;
 }
 main{
     grid-area:main;
@@ -125,7 +130,13 @@ table, th, td{
     border: 1px solid;
     margin-top: 2em;
     border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
     }
+
+tr:nth-child(even){
+    background-color: #222;
+}
 #instrument{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
