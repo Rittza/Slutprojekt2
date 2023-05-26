@@ -1,10 +1,10 @@
-body {
+body { /*Css för hela bodyn*/
 	background-color: grey;
 	margin: 0;
 	padding: 0;
 }
 
-.wrapper {
+.wrapper { /* Css för min grid container */
 	width: 100%;
 	display: grid;
 	grid-template-columns: 1fr;
@@ -15,15 +15,15 @@ body {
 	min-height: 100vh;
 }
 
-header {
+header { /* Css för header och grid area i headern */
 	grid-area: header;
 }
 
-nav {
+nav { /* Css för globala menyn/nav specifikt */
 	grid-area: nav;
 }
 
-nav > ul {
+nav > ul { /* Css för Nav och ul elementen i naven */
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 	background-color: black;
@@ -32,7 +32,7 @@ nav > ul {
 	height: 100%;
 }
 
-nav li {
+nav li { 
 	list-style-type: none;
 	text-align: center;
 	font-size: 1.5em;
@@ -51,13 +51,13 @@ nav a {
 	text-decoration: none;
 }
 
-h1 {
+h1 { /* Css för rubrik */
 	text-align: center;
 	font-size: 5em;
 	color: white;
 }
 
-footer {
+footer { /* Css för footer /*/
 	text-align: center;
 	font-size: 3em;
 	grid-area: footer;
@@ -68,25 +68,25 @@ footer {
 	background-color: black;
 }
 
-footer p {
+footer p { /* Css, position och färg för p taggen i footer */
 	margin: 0;
 	color: white;
 }
 
-main {
+main { /* Css för main och grid arean för main */
 	grid-area: main;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: auto;
 }
 
-section {
+section { /* Css för section som textstorlek, textposition och färg */
 	font-size: 1.5em;
 	text-align: center;
 	color: white;
 }
 
-.metal {
+.metal { /* Klass för bild, bredd, position*/
 	width: 60vh;
 	margin-left: auto;
 	margin-right: auto;
@@ -94,7 +94,7 @@ section {
 	margin-top: 2em;
 }
 
-.lemmy {
+.lemmy { /* Klass för bild, bredd, position*/
 	width: 60vh;
 	height: 30vw;
 	margin-left: auto;
@@ -103,7 +103,7 @@ section {
 	margin-top: 2em;
 }
 
-.metallica {
+.metallica { /* Klass för bild, bredd, position*/
 	width: 20vh;
 	height: 10vw;
 	margin-left: auto;
@@ -112,7 +112,7 @@ section {
 	margin-top: 2em;
 }
 
-.inflames {
+.inflames { /* Klass för bild, bredd, position*/
 	width: 20vh;
 	height: 10vw;
 	margin-left: auto;
@@ -121,7 +121,7 @@ section {
 	margin-top: 2em;
 }
 
-.slipknot {
+.slipknot { /* Klass för bild, bredd, position*/
 	width: 20vh;
 	height: 10vw;
 	margin-left: auto;
@@ -130,7 +130,7 @@ section {
 	margin-top: 2em;
 }
 
-table, th, td {
+table, th, td { /* Css för tabell */
 	border: 1px solid;
 	margin-top: 2em;
 	border-collapse: collapse;
@@ -138,16 +138,16 @@ table, th, td {
 	margin-right: auto;
 }
 
-tr:nth-child(even) {
+tr:nth-child(even) { /*Färg för tabell/zebra striping */
 	background-color: #222;
 }
 
-#instrument {
+#instrument { /* Id selektor */
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 }
 
-#support {
+#support { /* Id selektor */
 	display: grid;
 	grid-template-columns: 1fr;
 }
