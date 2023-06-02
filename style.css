@@ -83,8 +83,6 @@ footer { /*Css för footer som textstorlek, textposition, gridposition, kolumn o
 	text-align: center;
 	font-size: 3em;
 	grid-area: footer;
-	display: grid;
-	grid-template-columns: 1fr;
 	padding: 1%;
 	margin: 0;
 	background-color: #000;
